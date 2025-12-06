@@ -27,6 +27,6 @@ target
 
 
 # ---- Customs ---- # 
-assets/day_*
+assets/day_*/input.txt
 
 
