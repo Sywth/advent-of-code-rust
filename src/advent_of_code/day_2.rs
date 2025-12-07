@@ -1,4 +1,4 @@
-pub fn parser(input: &str) -> Vec<(i64, i64)> {
+pub fn parse(input: &str) -> Vec<(i64, i64)> {
     return input
         .trim_end()
         .split(',')
@@ -10,7 +10,7 @@ pub fn parser(input: &str) -> Vec<(i64, i64)> {
 }
 
 pub fn logic_1(input: &str) -> i64 {
-    let pairs = parser(input);
+    let pairs = parse(input);
     let mut res = 0;
     for pair in pairs {
         for id in pair.0..=pair.1 {
@@ -48,7 +48,7 @@ fn get_divisors(num: u32) -> Vec<i32> {
 }
 
 pub fn logic_2(input: &str) -> i64 {
-    let pairs = parser(input);
+    let pairs = parse(input);
     let mut res = 0;
     for pair in pairs {
         for id in pair.0..=pair.1 {
